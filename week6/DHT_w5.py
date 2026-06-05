@@ -106,8 +106,8 @@ if __name__ == "__main__":
                         # Send to Blynk if online and authenticated
                         if wifi_active and blynk.state == BLYNK_CONNECTED:
                             try:
-                                blynk.virtual_write(1, temp_formatted)  # V1: Temperature
-                                blynk.virtual_write(2, hum_formatted)   # V2: Humidity
+                                blynk.virtual_write(0, temp_formatted)  # V1: Temperature
+                                blynk.virtual_write(1, hum_formatted)   # V2: Humidity
                                 print("Data sent to Blynk!")
                             except Exception:
                                 print("Blynk transmission failed (Server unreachable).")
