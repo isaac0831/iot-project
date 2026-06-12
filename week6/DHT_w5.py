@@ -1,7 +1,7 @@
 #!/home/weijun/iot_lab/env/bin/python3
 import board
 import adafruit_dht
-import sqlite33
+import sqlite3
 from datetime import datetime
 import time
 import socket
